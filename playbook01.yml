@@ -1,0 +1,9 @@
+---
+- hosts: local
+  tasks:
+    - name: ping the machine
+      ping:
+    - name: debug
+      debug:
+        msg: "{{ var_1 }}"
+

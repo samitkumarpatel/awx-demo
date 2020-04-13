@@ -1,18 +1,28 @@
 ---
 all:
   hosts:
-    localhost
-    localhost.x.net
+    localhost:
+    localhost.x.net:
   vars:
     localhost_variable: some_value
-    var1: 1
- children:
-   host01:
-     hosts:
-       1.x.net
-       2.x.net
-   host02:
-     hosts:
-       localhost
-     vars:
-       ansible_connection: local 
+    var_1: 1
+  children:
+    host01:
+      hosts:
+        1.x.net:
+        2.x.net:
+    host02:
+      hosts:
+        localhost:
+          ansible_connection: local
+    local:
+      hosts:
+        localhost:
+      vars:
+        var_1: 2 
+local:
+  hosts:
+    localhost:
+  vars:
+    ansible_connection: local
+    var_1: 2
