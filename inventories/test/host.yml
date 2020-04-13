@@ -5,3 +5,7 @@ all:
      ansible_connection: local
  vars:
    var_1: 3
+
+hostx:
+  x.x.net:
+    var_1: 4
