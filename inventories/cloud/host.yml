@@ -1,0 +1,11 @@
+---
+all:
+  ops:
+  other:
+ops:
+  hosts:
+    10.0.1.6:
+other:
+  hosts:
+    10.0.1.4:
+    10.0.1.5:
