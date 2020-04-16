@@ -1,5 +1,5 @@
 ---
-- hosts: vm04
+- hosts: all
   become: true
   environment:
       LC_ALL: C
